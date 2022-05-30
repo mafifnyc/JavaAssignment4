@@ -1,10 +1,10 @@
 public class Question8 {
-    static String isPositiveOrNagetive(int n) {
+    static String isPositiveOrNegative(int n) {
         if(n>0){
-            return "Positve";
+            return "Positive";
         }
         else if(n<0) {
-            return "Nagetive";
+            return "Negative";
         }
         else {
             return "Zero";
@@ -13,6 +13,6 @@ public class Question8 {
 
     public static void main(String[] args) {
         int number = -199;
-        System.out.println(number + " is " + isPositiveOrNagetive(number));
+        System.out.println(number + " is " + isPositiveOrNegative(number));
     }
 }

@@ -12,7 +12,8 @@ public class Holiday {
     }
 
     public static void main(String[] args) {
-        Holiday h = new Holiday("Independence day", 4, "July");
-        System.out.println(h.inSameMonth(h));
+        Holiday h1 = new Holiday("Independence day", 4, "July");
+        Holiday h2 = new Holiday("Memorial Day", 29, "July");
+        System.out.println(h1.inSameMonth(h2));
     }
 }
