@@ -6,7 +6,6 @@ public class Question2 {
         if (password.length() < 10) {
             return false;
         }
-
         if (password.contains(" ") || password.contains("`") || password.contains("~") || password.contains("!")
                 || password.contains("@") || password.contains("#") || password.contains("$") || password.contains("%")
                 || password.contains("^") || password.contains("&") || password.contains("*") || password.contains("(")
@@ -15,11 +14,9 @@ public class Question2 {
                 || password.contains("}") || password.contains(";") || password.contains(":") || password.contains("'")
                 || password.contains("\"") || password.contains(",") || password.contains("<") || password.contains(".")
                 || password.contains(">") || password.contains("/") || password.contains("?"))
-
         {
             return false;
         }
-
         for(int i=0; i<password.length(); i++)
         {
             char ch=password.charAt(i);
@@ -27,21 +24,13 @@ public class Question2 {
                 count++;
             }
         }
-
         if(count<2) {
             return false;
         }
-
-
-
         return true;
-
     }
-
-
     public static void main(String[] args) {
         System.out.println(passwordIsValid("12!3AbcAbcAbc"));
-
     }
 
 }
